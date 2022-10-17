@@ -34,7 +34,8 @@ print ("Table created successfully")
 
 ```
 ## CRUD Operation
-![image](https://user-images.githubusercontent.com/98219585/196101766-3666a537-1dc1-4f2a-9791-193211f95c30.png)
+![Screenshot (34)](https://user-images.githubusercontent.com/98219585/196144104-680b95fc-f462-452c-9db6-0688a76f38dc.png)
+
 
 
 
