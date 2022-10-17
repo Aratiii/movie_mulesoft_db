@@ -1,19 +1,19 @@
 
 import sqlite3
 
-conn = sqlite3.connect('movie_fav.db')
+conn = sqlite3.connect('movie_mulesoft.db')
 print ("Opened database successfully");
 
 #---------CREATE-------#
 
-# conn.execute('''CREATE TABLE MOVIEDB
-#          (ID INT PRIMARY KEY     NOT NULL,
-#          MOVIE_NAME           TEXT    NOT NULL,
-#          ACTOR_NAME           TEXT    NOT NULL,
-#          ACTRESS_NAME         TEXT   NOT NULL,
-#          YEAR_OF_RELEASE      DATE  NOT NULL,
-#          DIRECTOR_NAME        TEXT     NOT NULL);''')
-# print ("Table created successfully")
+conn.execute('''CREATE TABLE MOVIEDB
+         (ID INT PRIMARY KEY     NOT NULL,
+         MOVIE_NAME           TEXT    NOT NULL,
+         ACTOR_NAME           TEXT    NOT NULL,
+         ACTRESS_NAME         TEXT   NOT NULL,
+         YEAR_OF_RELEASE      DATE  NOT NULL,
+         DIRECTOR_NAME        TEXT     NOT NULL);''')
+print ("Table created successfully")
 
 
 
@@ -21,11 +21,11 @@ print ("Opened database successfully");
 
 
 conn.execute("INSERT INTO MOVIEDB (ID,MOVIE_NAME,ACTOR_NAME,ACTRESS_NAME,YEAR_OF_RELEASE,DIRECTOR_NAME) \
-      VALUES (4,'YJHD','RANBIR','DEEPIKA',2017,'YRF')");
+      VALUES (1,'YJHD','RANBIR','DEEPIKA',2017,'YRF')");
 conn.execute("INSERT INTO MOVIEDB (ID,MOVIE_NAME,ACTOR_NAME,ACTRESS_NAME,YEAR_OF_RELEASE,DIRECTOR_NAME) \
-      VALUES (5,'ZNMD','HRITIK','KATRINA',2015,'MADMAX')");
+      VALUES (2,'ZNMD','HRITIK','KATRINA',2015,'MADMAX')");
 conn.execute("INSERT INTO MOVIEDB (ID,MOVIE_NAME,ACTOR_NAME,ACTRESS_NAME,YEAR_OF_RELEASE,DIRECTOR_NAME) \
-      VALUES (6,'SPIDER MAN','TOM','ZENDAYA',2021,'MARVEL')");
+      VALUES (3,'SPIDER MAN','TOM','ZENDAYA',2021,'MARVEL')");
 #ADD MULTIPLE MOVIES AFTER THIS
 conn.commit()
 print ("Records created successfully")
